@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic HTML with CSS Stylingllll</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 1.1em;
+            font-weight: 200;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1em;
+            font-weight: 200;
+            color: #ecf0f1;
+        }
+
+        /* Navigation Styling */
+        nav {
+            background-color: #34495e;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.1em;
+            padding: 8px 15px;
+            transition: all 0.3s ease;
+            border-bottom: 2px solid transparent;
+        }
+
+        nav a:hover {
+            color: #3498db;
+            border-bottom: 2px solid #3498db;
+        }
+
+        /* Main Container */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 250px;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Section Styling */
+        section {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        section h2 {
+            color: #2c3e50;
+            font-size: 2em;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+
+        section p {
+            color: #555;
+            margin-bottom: 15px;
+            font-size: 1em;
+        }
+
+        /* Article Styling */
+        article {
+            background-color: #ecf0f1;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-left: 4px solid #3498db;
+            border-radius: 4px;
+        }
+
+        article h3 {
+            color: #2c3e50;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        article .meta {
+            color: #7f8c8d;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+
+        article p {
+            color: #34495e;
+            line-height: 1.8;
+        }
+
+        /* Aside (Sidebar) Styling */
+        aside {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            height: fit-content;
+        }
+
+        aside h3 {
+            color: #2c3e50;
+            font-size: 1.3em;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+
+        aside ul {
+            list-style: none;
+        }
+
+        aside li {
+            margin-bottom: 10px;
+            padding: 8px;
+            background-color: white;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        aside li:hover {
+            background-color: #e8f4f8;
+        }
+
+        aside a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        aside a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 50px;
+            border-top: 4px solid #3498db;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+            font-size: 0.95em;
+        }
+
+        #copyright {
+            color: #bdc3c7;
+            font-size: 0.85em;
+            margin-top: 15px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+                padding: 0 20px;
+            }
+
+            header h1 {
+                font-size: 1.8em;
+            }
+
+            section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Welcome to My co-learners</h1>
+        <p>lets Exploring Semantic HTML and Modern CSS</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Container -->
+    <div class="container">
+        <!-- Main Content Area -->
+        <main>
+            <!-- Section 1 -->
+            <section id="about">
+            <section id="home">
+                <h2>About Us</h2>
+                <p>This page demonstrates the use of semantic HTML5 elements combined with modern CSS styling. Each element serves a specific purpose in the document structure.</p>
+                <p>The layout uses CSS Grid for a responsive design that adapts to different screen sizes.</p>
+
+                <!-- Articles within Section -->
+                <article>
+                    <h3>Article 1: Getting Started</h3>
+                    <div class="meta">Published on April 7, 2026 | By Admin</div>
+                    <p>Learn the fundamentals of semantic HTML and how it improves accessibility and SEO. Semantic HTML uses meaningful tags that describe the content they contain.</p>
+                </article>
+
+                <article>
+                    <h3>Article 2: CSS Best Practices</h3>
+                    <div class="meta">Published on April 5, 2026 | By Developer</div>
+                    <p>Discover best practices for writing clean, maintainable CSS. Using selectors efficiently and organizing your stylesheets makes your code more scalable and easier to maintain.</p>
+                </article>
+            </section>
+
+            <!-- Section 2 -->
+            <section id="services">
+                <h2>Our Services</h2>
+                <p>We offer a comprehensive range of services to help you build modern, accessible web applications.</p>
+
+                <article>
+                    <h3>Web Design</h3>
+                    <p>Creating beautiful and functional designs that engage users and meet your business goals.</p>
+                </article>
+
+                <article>
+                    <h3>Development</h3>
+                    <p>Building robust applications using the latest technologies and best practices in web development.</p>
+                </article>
+            </section>
+            <section id="contact">
+                <h2>Contact</h2>
+                <p>Contact Information</p>
+
+                <article>
+                    <h3>Gmail</h3>
+                    <p>raineer@gmail.com</p>
+                </article>
+
+                <article>
+                    <h3>Phone</h3>
+                    <p>09657826282</p>
+                </article>
+            </section>
+        </main>
+
+        <!-- Aside (Sidebar) -->
+        <aside>
+            <h3>My Languages<!DOCTYPE html>
+                <html lang="en">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Semantic HTML with CSS and JavaScript</title>
+                    <style>
+                        * {
+                            margin: 0;
+                            padding: 0;
+                            box-sizing: border-box;
+                        }
+                
+                        /* Header Styling */
+                        header {
+                            background-color: #2c3e50;
+                            color: white;
+                            padding: 20px 0;
+                            text-align: center;
+                            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                        }
+                
+                        header h1 {
+                            font-size: 3.5em;
+                            font-weight: 600;
+                            letter-spacing: 1px;
+                            margin-bottom: 10px;
+                        }
+                
+                        header p {
+                            font-size: 1em;
+                            font-weight: 300;
+                            color: #ecf0f1;
+                        }
+                
+                        /* Navigation Styling */
+                        nav {
+                            background-color: #34495e;
+                            padding: 15px 0;
+                            position: sticky;
+                            top: 0;
+                            z-index: 100;
+                        }
+                
+                        nav ul {
+                            list-style: none;
+                            display: flex;
+                            justify-content: center;
+                            gap: 30px;
+                        }
+                
+                        nav a {
+                            color: white;
+                            text-decoration: none;
+                            font-weight: 500;
+                            font-size: 1.1em;
+                            padding: 8px 15px;
+                            transition: all 0.3s ease;
+                            border-bottom: 2px solid transparent;
+                        }
+                
+                        nav a:hover {
+                            color: #3498db;
+                            border-bottom: 2px solid #3498db;
+                        }
+                
+                        /* Main Container */
+                        body {
+                            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                            line-height: 1.6;
+                            color: #2c3e50;
+                        }
+                
+                        .container {
+                            display: grid;
+                            grid-template-columns: 1fr 250px;
+                            gap: 20px;
+                            max-width: 1200px;
+                            margin: 0 auto;
+                            padding: 40px 20px;
+                        }
+                
+                        /* Section Styling */
+                        section {
+                            background-color: #ffffff;
+                            padding: 30px;
+                            border-radius: 8px;
+                            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                            margin-bottom: 30px;
+                        }
+                
+                        section h2 {
+                            color: #2c3e50;
+                            font-size: 2em;
+                            margin-bottom: 20px;
+                            border-bottom: 3px solid #3498db;
+                            padding-bottom: 10px;
+                        }
+                
+                        section p {
+                            color: #555;
+                            margin-bottom: 15px;
+                            font-size: 1em;
+                        }
+                
+                        /* Article Styling */
+                        article {
+                            background-color: #ecf0f1;
+                            padding: 20px;
+                            margin-bottom: 20px;
+                            border-left: 4px solid #3498db;
+                            border-radius: 4px;
+                        }
+                
+                        article h3 {
+                            color: #2c3e50;
+                            font-size: 1.5em;
+                            margin-bottom: 10px;
+                        }
+                
+                        article .meta {
+                            color: #7f8c8d;
+                            font-size: 0.9em;
+                            margin-bottom: 10px;
+                        }
+                
+                        article p {
+                            color: #34495e;
+                            line-height: 1.8;
+                        }
+                
+                        /* Aside (Sidebar) Styling */
+                        aside {
+                            background-color: #f8f9fa;
+                            padding: 20px;
+                            border-radius: 8px;
+                            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                            height: fit-content;
+                        }
+                
+                        aside h3 {
+                            color: #2c3e50;
+                            font-size: 1.3em;
+                            margin-bottom: 15px;
+                            border-bottom: 2px solid #3498db;
+                            padding-bottom: 10px;
+                        }
+                
+                        aside ul {
+                            list-style: none;
+                        }
+                
+                        aside li {
+                            margin-bottom: 10px;
+                            padding: 8px;
+                            background-color: white;
+                            border-radius: 4px;
+                            transition: background-color 0.3s ease;
+                        }
+                
+                        aside li:hover {
+                            background-color: #e8f4f8;
+                        }
+                
+                        aside a {
+                            color: #3498db;
+                            text-decoration: none;
+                            font-weight: 500;
+                        }
+                
+                        aside a:hover {
+                            text-decoration: underline;
+                        }
+                
+                        /* Footer Styling */
+                        footer {
+                            background-color: #2c3e50;
+                            color: white;
+                            text-align: center;
+                            padding: 30px 20px;
+                            margin-top: 50px;
+                            border-top: 4px solid #3498db;
+                        }
+                
+                        footer p {
+                            margin-bottom: 10px;
+                            font-size: 0.95em;
+                        }
+                
+                        #copyright {
+                            color: #bdc3c7;
+                            font-size: 0.85em;
+                            margin-top: 15px;
+                        }
+                
+                        /* JavaScript Features Styling */
+                        .user-info {
+                            background-color: #e8f4f8;
+                            padding: 20px;
+                            border-radius: 8px;
+                            margin-bottom: 20px;
+                            border: 2px solid #3498db;
+                        }
+                
+                        .user-info p {
+                            margin: 8px 0;
+                            font-weight: 500;
+                        }
+                
+                        .info-label {
+                            color: #2c3e50;
+                            font-weight: 700;
+                        }
+                
+                        .info-value {
+                            color: #3498db;
+                            font-weight: 600;
+                        }
+                
+                        /* Button Styling */
+                        .button-group {
+                            display: flex;
+                            gap: 10px;
+                            margin: 20px 0;
+                            flex-wrap: wrap;
+                        }
+                
+                        button {
+                            background-color: #3498db;
+                            color: white;
+                            border: none;
+                            padding: 12px 24px;
+                            font-size: 1em;
+                            border-radius: 5px;
+                            cursor: pointer;
+                            transition: all 0.3s ease;
+                            font-weight: 600;
+                        }
+                
+                        button:hover {
+                            background-color: #2980b9;
+                            transform: translateY(-2px);
+                            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                        }
+                
+                        button:active {
+                            transform: translateY(0);
+                        }
+                
+                        .btn-alert {
+                            background-color: #e74c3c;
+                        }
+                
+                        .btn-alert:hover {
+                            background-color: #c0392b;
+                        }
+                
+                        .btn-toggle {
+                            background-color: #27ae60;
+                        }
+                
+                        .btn-toggle:hover {
+                            background-color: #229954;
+                        }
+                
+                        .btn-clear {
+                            background-color: #95a5a6;
+                        }
+                
+                        .btn-clear:hover {
+                            background-color: #7f8c8d;
+                        }
+                
+                        /* Input Styling */
+                        .input-section {
+                            background-color: #f9f9f9;
+                            padding: 20px;
+                            border-radius: 8px;
+                            border: 2px solid #ecf0f1;
+                            margin-bottom: 20px;
+                        }
+                
+                        .input-section label {
+                            display: block;
+                            margin-bottom: 8px;
+                            color: #2c3e50;
+                            font-weight: 600;
+                        }
+                
+                        .input-section input,
+                        .input-section select,
+                        .input-section textarea {
+                            width: 100%;
+                            padding: 12px;
+                            margin-bottom: 15px;
+                            border: 2px solid #ecf0f1;
+                            border-radius: 5px;
+                            font-size: 1em;
+                            font-family: inherit;
+                            transition: border-color 0.3s ease;
+                        }
+                
+                        .input-section input:focus,
+                        .input-section select:focus,
+                        .input-section textarea:focus {
+                            outline: none;
+                            border-color: #3498db;
+                            background-color: #f0f8ff;
+                        }
+                
+                        /* Output Display */
+                        .output-display {
+                            background-color: #d5f4e6;
+                            padding: 20px;
+                            border-radius: 8px;
+                            border-left: 4px solid #27ae60;
+                            margin-top: 15px;
+                            display: none;
+                        }
+                
+                        .output-display.show {
+                            display: block;
+                        }
+                
+                        .output-display p {
+                            color: #27ae60;
+                            font-weight: 500;
+                            margin: 5px 0;
+                        }
+                
+                        /* Dynamic Content Box */
+                        #dynamicContent {
+                            background-color: #fff3cd;
+                            padding: 20px;
+                            border-radius: 8px;
+                            border: 2px dashed #ffc107;
+                            min-height: 100px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            color: #856404;
+                            font-weight: 500;
+                            margin-top: 20px;
+                            transition: all 0.3s ease;
+                        }
+                
+                        #dynamicContent.updated {
+                            background-color: #d4edda;
+                            border-color: #27ae60;
+                            color: #27ae60;
+                        }
+                
+                        /* Responsive Design */
+                        @media (max-width: 768px) {
+                            .container {
+                                grid-template-columns: 1fr;
+                            }
+                
+                            nav ul {
+                                flex-direction: column;
+                                gap: 10px;
+                                padding: 0 20px;
+                            }
+                
+                            header h1 {
+                                font-size: 1.8em;
+                            }
+                
+                            section {
+                                padding: 20px;
+                            }
+                
+                            .button-group {
+                                flex-direction: column;
+                            }
+                
+                            button {
+                                width: 100%;
+                            }
+                
+                            .input-section input,
+                            .input-section select,
+                            .input-section textarea {
+                                width: 100%;
+                            }
+                        }
+                    </style>
+                </head>
+                <body>
+                    <!-- Header -->
+                    <header>
+                        <h1>Interactive Web Page</h1>
+                        <p>HTML, CSS, and JavaScript Features</p>
+                    </header>
+                
+                   
+                    <!-- Main Content Container -->
+                    <div class="container">
+                        <!-- Main Content Area -->
+                        <main>
+                            <!-- Section 1: Variables and Output -->
+                            <section id="features">
+                                <h2>A. Variables and Output</h2>
+                                <p>This section displays user information stored in JavaScript variables.</p>
+                
+                                <div class="user-info">
+                                    <p><span class="info-label">Student Name:</span> <span class="info-value" id="displayName">Loading...</span></p>
+                                    <p><span class="info-label">Course:</span> <span class="info-value" id="displayCourse">Loading...</span></p>
+                                    <p><span class="info-label">Status:</span> <span class="info-value" id="displayStatus">Loading...</span></p>
+                                </div>
+                            </section>
+                
+                            <!-- Section 2: Button Function -->
+                            <section id="interact">
+                                <h2>B. Button Function - Show Alert</h2>
+                                <p>Click the button below to trigger an alert that displays information.</p>
+                
+                                <div class="button-group">
+                                    <button class="btn-alert" onclick="showAlert()">Show Alert</button>
+                                    <button class="btn-alert" onclick="showCustomAlert()">Custom Alert</button>
+                                </div>
+                            </section>
+                
+                            <!-- Section 3: User Input -->
+                            <section>
+                                <h2>C. User Input - Display Dynamically</h2>
+                                <p>Enter your information below and watch it display in real-time.</p>
+                
+                                <div class="input-section">
+                                    <label for="userFullName">Full Name:</label>
+                                    <input 
+                                        type="text" 
+                                        id="userFullName" 
+                                        placeholder="Enter your full name"
+                                        oninput="displayUserInput()"
+                                    />
+                
+                                    <label for="userEmail">Email Address:</label>
+                                    <input 
+                                        type="email" 
+                                        id="userEmail" 
+                                        placeholder="Enter your email"
+                                        oninput="displayUserInput()"
+                                    />
+                
+                                    <label for="userFeedback">Your Feedback:</label>
+                                    <textarea 
+                                        id="userFeedback" 
+                                        placeholder="Share your thoughts..."
+                                        rows="4"
+                                        oninput="displayUserInput()"
+                                    ></textarea>
+                
+                                    <button onclick="clearInput()" class="btn-clear">Clear All</button>
+                                </div>
+                
+                                <div class="output-display" id="userOutput">
+                                    <div>
+                                        <p><strong>Your Input:</strong></p>
+                                        <p>Name: <span id="outputName">Not provided</span></p>
+                                        <p>Email: <span id="outputEmail">Not provided</span></p>
+                                        <p>Feedback: <span id="outputFeedback">Not provided</span></p>
+                                    </div>
+                                </div>
+                            </section>
+                
+                            <!-- Section 4: Event Handling -->
+                            <section>
+                                <h2>D. Event Handling - Change Content Dynamically</h2>
+                                <p>Use the buttons below to change the content dynamically.</p>
+                
+                                <div class="button-group">
+                                    <button class="btn-toggle" onclick="toggleContent()">Toggle Content</button>
+                                    <button class="btn-toggle" onclick="changeColor()">Change Color</button>
+                                    <button class="btn-toggle" onclick="changeDateTime()">Update Time</button>
+                                    <button class="btn-clear" onclick="resetContent()">Reset Content</button>
+                                </div>
+                
+                                <div id="dynamicContent">
+                                    🎉 Click the buttons above to see the magic happen! ✨
+                                </div>
+                            </section>
+                        </main>
+                
+                        <!-- Aside (Sidebar) -->
+                        <aside>
+                            <h3>Interactive Features</h3>
+                            <ul>
+                                <li><a href="#features">Variables & Output</a></li>
+                                <li><a href="#interact">Button Functions</a></li>
+                                <li><a href="#userForm">User Input</a></li>
+                                <li><a href="#dynamic">Event Handling</a></li>
+                            </ul>
+                
+                            <h3 style="margin-top: 25px;">Quick Stats</h3>
+                            <ul>
+                                <li>Total Buttons: <strong>8</strong></li>
+                                <li>Input Fields: <strong>3</strong></li>
+                                <li>Events: <strong>7+</strong></li>
+                                <li>Features: <strong>4</strong></li>
+                            </ul>
+                
+                            <div class="user-info" style="margin-top: 25px; background-color: #fff3cd; border-color: #ffc107;">
+                                <p style="color: #856404;"><strong>💡 Tip:</strong> Interact with the form to see real-time updates!</p>
+                            </div>
+                        </aside>
+                    </div>
+                
+                    <!-- Footer -->
+                    <footer>
+                        <p>&copy; 2026 Interactive Web Page. All rights reserved.</p>
+                        <p>Built with HTML5, CSS3, and JavaScript</p>
+                        <div id="copyright">Explore the features and enjoy the interactivity!</div>
+                    </footer>
+                
+                    <!-- JavaScript Code -->
+                    <script>
+                        // ========================================
+                        // A. VARIABLES AND OUTPUT
+                        // ========================================
+                        
+                        // Define variables
+                        const studentName = "Raineer";
+                        const courseName = "BSIT";
+                        const enrollmentStatus = "Active";
+                
+                        // Function to display variables on page load
+                        function displayVariables() {
+                            document.getElementById("displayName").textContent = studentName;
+                            document.getElementById("displayCourse").textContent = courseName;
+                            document.getElementById("displayStatus").textContent = enrollmentStatus;
+                        }
+                
+                        // ========================================
+                        // B. BUTTON FUNCTION - SHOW ALERT
+                        // ========================================
+                
+                        function showAlert() {
+                            alert("Welcome to Interactive JavaScript!\n\nStudent: " + studentName + "\nCourse: " + courseName);
+                        }
+                
+                        function showCustomAlert() {
+                            const message = "Hello! Welcome to my domain.\n\nClick OK to continue.";
+                            const result = confirm(message);
+                            
+                            if (result) {
+                                alert("Great! You confirmed the message.");
+                            } else {
+                                alert("You cancelled the alert.");
+                            }
+                        }
+                
+                        // ========================================
+                        // C. USER INPUT - DISPLAY DYNAMICALLY
+                        // ========================================
+                
+                        function displayUserInput() {
+                            const fullName = document.getElementById("userFullName").value;
+                            const email = document.getElementById("userEmail").value;
+                            const feedback = document.getElementById("userFeedback").value;
+                
+                            // Update output display
+                            document.getElementById("outputName").textContent = fullName || "Not provided";
+                            document.getElementById("outputEmail").textContent = email || "Not provided";
+                            document.getElementById("outputFeedback").textContent = feedback || "Not provided";
+                
+                            // Show output box if any input is provided
+                            const userOutput = document.getElementById("userOutput");
+                            if (fullName || email || feedback) {
+                                userOutput.classList.add("show");
+                            } else {
+                                userOutput.classList.remove("show");
+                            }
+                        }
+                
+                        function clearInput() {
+                            document.getElementById("userFullName").value = "";
+                            document.getElementById("userEmail").value = "";
+                            document.getElementById("userFeedback").value = "";
+                            document.getElementById("userOutput").classList.remove("show");
+                        }
+                
+                        // ========================================
+                        // D. EVENT HANDLING - CHANGE CONTENT DYNAMICALLY
+                        // ========================================
+                
+                        let contentState = 0; // Track toggle state
+                
+                        function toggleContent() {
+                            const dynamicContent = document.getElementById("dynamicContent");
+                            const messages = [
+                                "🎉 Click the buttons above to see the magic happen! ✨",
+                                "🚀 This content has been toggled! Well done!",
+                                "⭐ You're doing great! Keep exploring!",
+                                "🎯 JavaScript is powerful and fun!",
+                                "💻 Frontend development is awesome!"
+                            ];
+                
+                            contentState = (contentState + 1) % messages.length;
+                            dynamicContent.textContent = messages[contentState];
+                            dynamicContent.classList.add("updated");
+                        }
+                
+                        let colorIndex = 0;
+                        const colors = ["#fff3cd", "#d4edda", "#d1ecf1", "#f8d7da", "#e2e3e5"];
+                        const textColors = ["#856404", "#27ae60", "#0c5460", "#721c24", "#383d41"];
+                
+                        function changeColor() {
+                            const dynamicContent = document.getElementById("dynamicContent");
+                            colorIndex = (colorIndex + 1) % colors.length;
+                            dynamicContent.style.backgroundColor = colors[colorIndex];
+                            dynamicContent.style.color = textColors[colorIndex];
+                            dynamicContent.style.borderColor = textColors[colorIndex];
+                        }
+                
+                        function updateDateTime() {
+                            const now = new Date();
+                  // ========================================
+// Student Information Object
+// ========================================
+
+const student = {
+    name: "John Doe",
+    course: "Full Stack Web Development",
+    yearLevel: "3rd Year",
+    favoriteLanguage: "JavaScript"
+};
+
+// ========================================
+// Display Student Information
+// ========================================
+
+console.log("========================================");
+console.log("         STUDENT INFORMATION");
+console.log("========================================\n");
+
+console.log(`Name:                      ${student.name}`);
+console.log(`Course:                    ${student.course}`);
+console.log(`Year Level:                ${student.yearLevel}`);
+console.log(`Favorite Programming Language: ${student.favoriteLanguage}`);
+
+console.log("\n========================================");
+console.log("         END OF INFORMATION");
+console.log("========================================\n");
+
+// ========================================
+// Alternative: Function-based approach
+// ========================================
+
+function displayStudentInfo(studentData) {
+    console.log("\n--- Function-based Display ---\n");
+    console.log(`📚 Student Name: ${studentData.name}`);
+    console.log(`📖 Course: ${studentData.course}`);
+    console.log(`📅 Year Level: ${studentData.yearLevel}`);
+    console.log(`💻 Favorite Language: ${studentData.favoriteLanguage}`);
+}
+
+displayStudentInfo(student);
+
+// ========================================
+// Export for use in other modules (optional)
+// ========================================
+
+module.exports = student;          const timeString = now.toLocaleString();
+                            document.getElementById("dynamicContent").textContent = 
+                                "⏰ Current Date & Time: " + timeString;
+                            document.getElementById("dynamicContent").classList.add("updated");
+                        }
+                
+                        function resetContent() {
+                            const dynamicContent = document.getElementById("dynamicContent");
+                            dynamicContent.textContent = "🎉 Click the buttons above to see the magic happen! ✨";
+                            dynamicContent.style.backgroundColor = "#fff3cd";
+                            dynamicContent.style.color = "#856404";
+                            dynamicContent.style.borderColor = "#ffc107";
+                            dynamicContent.classList.remove("updated");
+                            contentState = 0;
+                            colorIndex = 0;
+                        }
+                
+                        // ========================================
+                        // INITIALIZE ON PAGE LOAD
+                        // ========================================
+                
+                        window.addEventListener("DOMContentLoaded", function() {
+                            displayVariables();
+                        });
+                    </script>
+                </body>
+                </html>inks</h3>
+            <ul>
+                <li><a href="#section1">Getting Started</a></li>
+                <li><a href="#section2">CSS Techniques</a></li>
+                <li><a href="#section3">HTML5 Standards</a></li>
+                <li><a href="#section4">Responsive Design</a></li>
+                <li><a href="#section5">Accessibility</a></li>
+            </ul>
+
+            <h3 style="margin-top: 25px;">Recent Posts</h3>
+            <ul>
+                <li><a href="#post1">New CSS Features</a></li>
+                <li><a href="#post2">HTML5 Semantics</a></li>
+                <li><a href="#post3">Web Standards</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 My Website. All rights reserved.</p>
+        <p>Designed with HTML5 and CSS3</p>
+        <div id="copyright">Follow us on social media for updates and news.</div>
+    </footer>
+</body>
+</html>
